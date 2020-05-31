@@ -1,9 +1,14 @@
+/*
+* Setting the margin and padding for every element to zero(0)
+* to avoid unwanted or unneccessary margin and padding.
+*/
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-body {
+
+body, a:hover {
   background-color: #dddddd;
 }
 
@@ -12,58 +17,77 @@ main {
   margin: auto;
 }
 
+/* 
+* .container defines the style for the header and the footer
+* if applied to them.
+*/
 .container {
   background-color: royalblue;
   text-align: center;
   padding: 30px;
 }
 
+.container p, .container h1, .container h2, a, a:link, a:active, a:hover, a:visited {
+  color: #ffffff;
+}
+
+/* 
+* Styles for the heading tags
+*/
 h1 {
   font-size: 40px;
-  font-family: Georgia, serif;
 }
 h2 {
-  font-size: 18px;
+  font-size: 20px;
+}
+
+h1, h2, h3, .title {
   font-family: Georgia, serif;
 }
 
-p {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-}
-
-.container p, .container h1, .container h2 {
-  color: #ffffff;
-}
-
-img {
-  width: 100%
-}
-
-.spacer {
-  margin: 40px 0;
-}
-
+/* 
+* Styles the link and it's states
+*/
 a, a:link, a:active, a:hover, a:visited {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
   text-decoration: none;
   background-color: royalblue;
-  color: #ffffff;
+}
+
+p, li, a, a:link, a:active, a:hover, a:visited {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
 }
 
 a:hover {
   color: royalblue;
-  background-color: #dddddd;
+}
+
+/* 
+* Image styles
+*/
+img {
+  width: 100%
+}
+
+/* 
+* Utility styles
+*/
+.spacer {
+  height: 80px;
 }
 
 .title {
-  font-family: Georgia, serif;
   text-align: center;
-  font-size: 30px;
   margin-bottom: 20px;
 }
 
-.greeting {
+.greeting, .title {
   font-size: 30px;
+}
+
+/* 
+* Style for the lists
+*/
+ol, ul {
+  list-style-position: inside;
 }
